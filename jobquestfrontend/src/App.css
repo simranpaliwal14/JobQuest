@@ -1,0 +1,397 @@
+.App {
+  text-align: center;
+}
+body {
+  background-image: url('./images/dashboard.jpg');
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  margin: 0; /* Removes default margin to ensure background image covers the whole body */
+  padding: 0; /* Removes default padding */
+  height: 100vh; /* Ensures the body takes the full viewport height */
+}
+
+
+ul.ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+ul.ul li {
+  display: inline; /* Display list items inline */
+  margin: 0 10px; /* Margin between buttons */
+}
+
+.home-container {
+  background-image: url('./images/homepage.png');
+  background-size: cover; /* Adjusts the image to cover the container */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  overflow: hidden;
+
+  /* Set a default height */
+  height: 100vh;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .home-container {
+    background-size: contain; /* Adjusts the image to fit within the container */
+  }
+}
+
+
+
+.box {
+  background-color: rgba(196, 174, 224, 0.8); /* Semi-transparent white background */
+  
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner space */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  /* Add any additional dimensions here */
+  margin-left: 10vh; /* Optional: Shift box to the right */
+  margin-right: 90vh;
+}
+
+/* src/App.css */
+
+.registration-box {
+  background-color: rgba(196, 174, 224, 0.8); /* Slightly transparent white background */
+  
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner space */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Adjust the max-width as needed */
+  margin-left: 80px; /* Center horizontally */
+  margin-right: 90vh;
+}
+
+/* src/App.css */
+
+.login-box {
+  background-color: rgba(196, 174, 224, 0.8); /* Slightly transparent white background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner space */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Adjust the max-width as needed */
+  margin-left: 80px; /* Center horizontally */
+  margin-bottom: 20px;
+  margin-right: 90vh;
+}
+
+.dashboard-background {
+  background-image: url('./images/dashboard.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dashboard-box {
+  background-color: rgba(196, 174, 224, 0.8); /* Slightly transparent white background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  max-width: 800px; /* Maximum width */
+  min-width: 300px; /* Minimum width */
+  /* Add height and max-height if needed */
+  max-height: 1000px; /* Maximum height */
+  min-height: 200px; /* Minimum height */
+  margin-bottom: 100px;
+  
+}
+
+.full-page-background {
+  background-image: url('./images/dashboard.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgba(196, 174, 224, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+
+/*JOBPOSTLIST*/
+/* App.css */
+
+.container {
+  margin-top: 40px;
+  padding: 0 15px;
+  background-image: url('./images/dashboard.jpg');
+  background-size: cover; /* Adjust to fit the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background-color: rgba(196, 174, 224, 0.8);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  padding: 15px;
+  
+}
+
+.card-title {
+  
+  font-weight: bold;
+}
+
+.job-title {
+  font-size: 1.2rem;
+}
+
+.job-details {
+  font-size: 1rem;
+}
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.edit-button {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  background-color: #1976d2;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #155a8a;
+}
+
+.delete-button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  background-color: #d32f2f;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #a62828;
+}
+
+
+
+.accept-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.accept-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.reject-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.reject-button:disabled {
+  background-color: #ef9a9a;
+  cursor: not-allowed;
+}
+
+
+
+
+
+/* ViewJobs.css */
+
+.jobs-container {
+  margin-top: 40px;
+  padding: 0 15px;
+  background-image: url('./images/dashboard.jpg');
+  background-size: cover; /* Adjust to fit the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.jobs-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.jobs-post-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.job-search-input {
+  width: 100%;
+  background-color: rgba(196, 174, 224, 0.8);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.job-card {
+  background-color: rgba(196, 174, 224, 0.8);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  padding: 15px;
+}
+
+.job-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.job-card p {
+  margin: 5px 0;
+  color:black;
+}
+
+.job-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+.job-card a:hover {
+  background-color: #0056b3;
+}
+
+
+.search-input {
+  width: 100%;
+  background-color: rgba(196, 174, 224, 0.8);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+
+.view-applications-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.status-filter {
+  background-color: rgba(196, 174, 224, 0.8);
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.ul { 
+  list-style: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
